@@ -1,0 +1,39 @@
+# XAMPP 관련 파일
+.htaccess
+php.ini
+
+# 로그 파일
+*.log
+logs/
+
+# 임시 파일
+*.tmp
+*.temp
+*.swp
+*~
+
+# 환경 설정 파일
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# 의존성 디렉토리
+/vendor/
+/node_modules/
+
+# 캐시 및 업로드 디렉토리
+/cache/
+/uploads/
+
+# IDE 및 편집기 설정
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.komodotools/
+nbproject/
+.DS_Store
+Thumbs.db 

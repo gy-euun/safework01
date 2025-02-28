@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#f9fafc" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="primary-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d5aff"/>
+      <stop offset="100%" stop-color="#4a7fff"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="600" height="400" rx="16" ry="16" fill="url(#bg-gradient)" filter="url(#shadow)"/>
+  
+  <!-- 브라우저 윈도우 -->
+  <rect x="50" y="40" width="500" height="320" rx="10" ry="10" fill="#fff" stroke="#e9ecef" stroke-width="1"/>
+  
+  <!-- 브라우저 상단 바 -->
+  <rect x="50" y="40" width="500" height="40" rx="10" ry="10" fill="#f8f9fa"/>
+  <circle cx="80" cy="60" r="6" fill="#f74960"/>
+  <circle cx="100" cy="60" r="6" fill="#ffd166"/>
+  <circle cx="120" cy="60" r="6" fill="#06d6a0"/>
+  
+  <!-- 주소창 -->
+  <rect x="150" y="50" width="300" height="20" rx="10" ry="10" fill="#ffffff" stroke="#dee2e6" stroke-width="1"/>
+  <text x="170" y="65" font-family="Arial" font-size="10" fill="#6c757d">https://risknain.com/demo</text>
+  
+  <!-- 앱 내용 -->
+  <!-- 상단 내비게이션 -->
+  <rect x="50" y="80" width="500" height="50" fill="url(#primary-gradient)"/>
+  <text x="70" y="110" font-family="Arial" font-size="16" font-weight="bold" fill="#ffffff">RISKNAIN</text>
+  <text x="170" y="110" font-family="Arial" font-size="12" fill="#ffffff">대시보드</text>
+  <text x="250" y="110" font-family="Arial" font-size="12" fill="#ffffff">평가 관리</text>
+  <text x="330" y="110" font-family="Arial" font-size="12" fill="#ffffff">보고서</text>
+  <text x="390" y="110" font-family="Arial" font-size="12" fill="#ffffff">설정</text>
+  
+  <!-- 사이드바 -->
+  <rect x="50" y="130" width="120" height="230" fill="#f8f9fa"/>
+  <rect x="60" y="150" width="100" height="30" rx="6" ry="6" fill="url(#primary-gradient)"/>
+  <text x="85" y="170" font-family="Arial" font-size="12" fill="#ffffff">대시보드</text>
+  <rect x="60" y="190" width="100" height="30" rx="6" ry="6" fill="#ffffff" stroke="#e9ecef" stroke-width="1"/>
+  <text x="85" y="210" font-family="Arial" font-size="12" fill="#212529">위험 항목</text>
+  <rect x="60" y="230" width="100" height="30" rx="6" ry="6" fill="#ffffff" stroke="#e9ecef" stroke-width="1"/>
+  <text x="85" y="250" font-family="Arial" font-size="12" fill="#212529">통계</text>
+  <rect x="60" y="270" width="100" height="30" rx="6" ry="6" fill="#ffffff" stroke="#e9ecef" stroke-width="1"/>
+  <text x="85" y="290" font-family="Arial" font-size="12" fill="#212529">설정</text>
+  
+  <!-- 메인 컨텐츠 -->
+  <rect x="180" y="140" width="360" height="50" rx="8" ry="8" fill="#ffffff" stroke="#e9ecef" stroke-width="1"/>
+  <text x="200" y="170" font-family="Arial" font-size="16" font-weight="bold" fill="#212529">위험성 평가 데모</text>
+  <text x="400" y="170" font-family="Arial" font-size="12" fill="#6c757d">2023-02-27</text>
+  
+  <!-- 차트 1 -->
+  <rect x="180" y="200" width="170" height="150" rx="8" ry="8" fill="#ffffff" stroke="#e9ecef" stroke-width="1"/>
+  <text x="200" y="220" font-family="Arial" font-size="12" font-weight="bold" fill="#212529">위험 수준 분포</text>
+  <circle cx="220" cy="280" r="40" fill="none" stroke="#f8f9fa" stroke-width="20"/>
+  <circle cx="220" cy="280" r="40" fill="none" stroke="#1d5aff" stroke-width="20" stroke-dasharray="125, 125" stroke-dashoffset="0"/>
+  <circle cx="220" cy="280" r="40" fill="none" stroke="#f74960" stroke-width="20" stroke-dasharray="25, 225" stroke-dashoffset="0"/>
+  <circle cx="220" cy="280" r="40" fill="none" stroke="#ffd166" stroke-width="20" stroke-dasharray="75, 175" stroke-dashoffset="25"/>
+  <text x="220" y="280" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">위험 수준</text>
+  <text x="220" y="295" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">분석</text>
+  
+  <!-- 차트 2 -->
+  <rect x="360" y="200" width="180" height="150" rx="8" ry="8" fill="#ffffff" stroke="#e9ecef" stroke-width="1"/>
+  <text x="380" y="220" font-family="Arial" font-size="12" font-weight="bold" fill="#212529">평가 진행 현황</text>
+  <rect x="380" y="240" width="140" height="20" rx="10" ry="10" fill="#f8f9fa"/>
+  <rect x="380" y="240" width="112" height="20" rx="10" ry="10" fill="#1d5aff"/>
+  <text x="450" y="255" font-family="Arial" font-size="10" text-anchor="middle" fill="#fff">80%</text>
+  <text x="380" y="275" font-family="Arial" font-size="10" fill="#6c757d">위험 요소 식별</text>
+  
+  <rect x="380" y="290" width="140" height="20" rx="10" ry="10" fill="#f8f9fa"/>
+  <rect x="380" y="290" width="70" height="20" rx="10" ry="10" fill="#1d5aff"/>
+  <text x="415" y="305" font-family="Arial" font-size="10" text-anchor="middle" fill="#fff">50%</text>
+  <text x="380" y="325" font-family="Arial" font-size="10" fill="#6c757d">대응 방안 적용</text>
+</svg> 

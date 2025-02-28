@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#f9fafc" stop-opacity="1"/>
+    </linearGradient>
+    <linearGradient id="primary-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d5aff"/>
+      <stop offset="100%" stop-color="#4a7fff"/>
+    </linearGradient>
+    <linearGradient id="red-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f74960"/>
+      <stop offset="100%" stop-color="#ff6b8b"/>
+    </linearGradient>
+    <linearGradient id="green-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06d6a0"/>
+      <stop offset="100%" stop-color="#39e9b8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  
+  <!-- 배경 -->
+  <rect width="600" height="400" rx="16" ry="16" fill="url(#bg-gradient)" filter="url(#shadow)"/>
+  
+  <!-- 차트 제목 -->
+  <text x="300" y="40" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#212529">RISKNAIN 도입 효과</text>
+  
+  <!-- 두 차트 비교 설명 -->
+  <g transform="translate(70, 80)">
+    <circle cx="10" cy="10" r="8" fill="url(#red-gradient)"/>
+    <text x="30" y="15" font-family="Arial" font-size="14" fill="#212529">도입 전</text>
+    
+    <circle cx="120" cy="10" r="8" fill="url(#green-gradient)"/>
+    <text x="140" y="15" font-family="Arial" font-size="14" fill="#212529">도입 후</text>
+  </g>
+  
+  <!-- 막대 그래프 -->
+  <g transform="translate(40, 120)">
+    <!-- Y축 -->
+    <line x1="40" y1="0" x2="40" y2="220" stroke="#e9ecef" stroke-width="1"/>
+    
+    <!-- X축 -->
+    <line x1="40" y1="220" x2="540" y2="220" stroke="#e9ecef" stroke-width="1"/>
+    
+    <!-- Y축 눈금 -->
+    <line x1="35" y1="0" x2="45" y2="0" stroke="#e9ecef" stroke-width="1"/>
+    <text x="30" y="5" font-family="Arial" font-size="12" text-anchor="end" fill="#6c757d">100%</text>
+    
+    <line x1="35" y1="55" x2="45" y2="55" stroke="#e9ecef" stroke-width="1"/>
+    <text x="30" y="60" font-family="Arial" font-size="12" text-anchor="end" fill="#6c757d">75%</text>
+    
+    <line x1="35" y1="110" x2="45" y2="110" stroke="#e9ecef" stroke-width="1"/>
+    <text x="30" y="115" font-family="Arial" font-size="12" text-anchor="end" fill="#6c757d">50%</text>
+    
+    <line x1="35" y1="165" x2="45" y2="165" stroke="#e9ecef" stroke-width="1"/>
+    <text x="30" y="170" font-family="Arial" font-size="12" text-anchor="end" fill="#6c757d">25%</text>
+    
+    <line x1="35" y1="220" x2="45" y2="220" stroke="#e9ecef" stroke-width="1"/>
+    <text x="30" y="225" font-family="Arial" font-size="12" text-anchor="end" fill="#6c757d">0%</text>
+    
+    <!-- 사고 발생률 -->
+    <g transform="translate(100, 0)">
+      <text x="0" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529">사고 발생률</text>
+      
+      <!-- 도입 전 -->
+      <rect x="-30" y="55" width="25" height="165" rx="8" ry="8" fill="url(#red-gradient)" opacity="0.8"/>
+      
+      <!-- 도입 후 -->
+      <rect x="5" y="185" width="25" height="35" rx="8" ry="8" fill="url(#green-gradient)" opacity="0.8"/>
+      
+      <!-- 개선율 -->
+      <path d="M-20,40 L20,40 L0,20 Z" fill="#1d5aff"/>
+      <text x="0" y="15" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#1d5aff">89% 감소</text>
+    </g>
+    
+    <!-- 비용 손실 -->
+    <g transform="translate(220, 0)">
+      <text x="0" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529">비용 손실</text>
+      
+      <!-- 도입 전 -->
+      <rect x="-30" y="22" width="25" height="198" rx="8" ry="8" fill="url(#red-gradient)" opacity="0.8"/>
+      
+      <!-- 도입 후 -->
+      <rect x="5" y="165" width="25" height="55" rx="8" ry="8" fill="url(#green-gradient)" opacity="0.8"/>
+      
+      <!-- 개선율 -->
+      <path d="M-20,40 L20,40 L0,20 Z" fill="#1d5aff"/>
+      <text x="0" y="15" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#1d5aff">75% 절감</text>
+    </g>
+    
+    <!-- 평가 시간 -->
+    <g transform="translate(340, 0)">
+      <text x="0" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529">평가 소요시간</text>
+      
+      <!-- 도입 전 -->
+      <rect x="-30" y="44" width="25" height="176" rx="8" ry="8" fill="url(#red-gradient)" opacity="0.8"/>
+      
+      <!-- 도입 후 -->
+      <rect x="5" y="154" width="25" height="66" rx="8" ry="8" fill="url(#green-gradient)" opacity="0.8"/>
+      
+      <!-- 개선율 -->
+      <path d="M-20,40 L20,40 L0,20 Z" fill="#1d5aff"/>
+      <text x="0" y="15" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#1d5aff">65% 단축</text>
+    </g>
+    
+    <!-- 직원 만족도 -->
+    <g transform="translate(460, 0)">
+      <text x="0" y="250" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529">직원 만족도</text>
+      
+      <!-- 도입 전 -->
+      <rect x="-30" y="154" width="25" height="66" rx="8" ry="8" fill="url(#red-gradient)" opacity="0.8"/>
+      
+      <!-- 도입 후 -->
+      <rect x="5" y="55" width="25" height="165" rx="8" ry="8" fill="url(#green-gradient)" opacity="0.8"/>
+      
+      <!-- 개선율 -->
+      <path d="M-20,40 L20,40 L0,20 Z" fill="#1d5aff"/>
+      <text x="0" y="15" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#1d5aff">72% 향상</text>
+    </g>
+  </g>
+</svg> 
